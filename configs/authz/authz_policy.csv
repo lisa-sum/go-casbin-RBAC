@@ -1,0 +1,24 @@
+p, student, student, read, allow
+p, student, student, write, allow
+p, student, teacher, read, deny
+p, student, teacher, write, deny
+p, student, admin, read, deny
+p, student, admin, write, deny
+
+p, teacher, student, read, deny
+p, teacher, student, write, deny
+p, teacher, teacher, read, allow
+p, teacher, teacher, write, allow
+p, teacher, admin, read, deny
+p, teacher, admin, write, deny
+
+p, admin, student, read, allow
+p, admin, student, write, allow
+p, admin, teacher, read, allow
+p, admin, teacher, write, allow
+p, admin, admin, read, allow
+p, admin, admin, write, allow
+
+g, student, student
+g, teacher, teacher
+g, admin, admin
